@@ -20,4 +20,4 @@ JLinkLog.txt
 # ===== 临时杂项 =====
 build_log.txt
 test.txt
-.vscode/*.log
+.vscode/
