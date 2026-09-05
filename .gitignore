@@ -1,0 +1,23 @@
+# ===== Keil MDK 编译产物（不入库）=====
+Objects/
+Listings/
+DebugConfig/
+*.uvguix.*
+*.uvoptx
+*.bak
+*.dep
+*.o
+*.d
+*.crf
+*.lst
+JLinkLog.txt
+
+# ===== EIDE/VSCode 插件生成的工具目录 =====
+.cmsis/
+.pack/
+.eide/
+
+# ===== 临时杂项 =====
+build_log.txt
+test.txt
+.vscode/*.log
