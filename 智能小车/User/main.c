@@ -4,7 +4,7 @@
 #include "Motor1.h"
 #include "Motor2.h"
 #include "Tracking.h"
-
+     
 /*循迹行驶参数，可根据实际赛道情况调整*/
 #define TRACK_SMALL_ADJ		15		//小幅偏航修正量：一侧加速此值，另一侧减速此值（2号/4号压线）
 #define TRACK_LARGE_ADJ		30		//大幅偏航修正量：在直行速度基础上加减此值（1号/5号压线）
@@ -78,7 +78,7 @@ int main(void)
 	OLED_Init();		//OLED初始化
 	Motor1_Init();		//左侧电机驱动模块初始化（第1片TB6612：左前+左后，方向PA4/PA5，PWM=CH1/PA0）
 	Motor2_Init();		//右侧电机驱动模块初始化（第2片TB6612：右前+右后，方向PA6/PA7，PWM=CH2/PA1）
-	Tracking_Init();	//五路红外循迹模块初始化（OUT1~OUT5依次接PA8~PA12）
+	Tracking_Init();	//五路红外循迹模块初始化（接线镜像：OUT1物理最左→PA12……OUT5→PA8，补偿电机左右接反）
 						//注意：Timer定时中断模块也占用TIM2，与PWM冲突，二者只能用其一
 
 	Car_State = 1;						//小车进入运行状态，后续可扩展按键启停
@@ -106,4 +106,5 @@ int main(void)
 
 		Delay_ms(50);										//控制周期约50ms，循迹抖动时可适当减小
 	}
+
 }
