@@ -670,6 +670,16 @@
               <FileType>5</FileType>
               <FilePath>.\System\Timer.h</FilePath>
             </File>
+            <File>
+              <FileName>Tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\Tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>Tick.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\Tick.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -704,6 +714,26 @@
               <FileName>Tracking.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Tracking.h</FilePath>
+            </File>
+            <File>
+              <FileName>Ultrasonic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Ultrasonic.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ultrasonic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Ultrasonic.h</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\MPU6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\MPU6050.h</FilePath>
             </File>
             <File>
               <FileName>OLED.c</FileName>
